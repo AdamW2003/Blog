@@ -1,18 +1,29 @@
-import {Box} from "@mui/material";
-import { Fragment } from "react";
-import NavigationBar from "../components/NavigationBar";
-import SideBar from "../components/SideBar";
-  
+import { AppBar, Box } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import * as React from "react";
+import NavigationBar from "./NavigationBar";
+import SideBar from "./SideBar";
+import Content from "./Content";
+
 const Dashboard = () => {
+  const theme = useTheme();
+  const drawerWidth = 300;
   return (
-    <Fragment>
-      <Box className="dashboard">
+    <React.Fragment>
+      <Box
+        sx={{
+          backgroundColor: theme.colours.beige1,
+        }}
+      >
         <NavigationBar />
-        <SideBar />
+        <Box sx={{ display: "flex" }}>
+          <SideBar drawerWidth={drawerWidth} />
+          <Content />
+
+        </Box>
       </Box>
-    </Fragment>
+    </React.Fragment>
   );
 };
-  
-  export default Dashboard;
-  
+
+export default Dashboard;
