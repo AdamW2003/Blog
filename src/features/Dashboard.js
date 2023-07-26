@@ -15,6 +15,7 @@ const Dashboard = () => {
       <Box
         sx={{
           backgroundColor: theme.colours.beige1,
+          overflowX: "hidden",
         }}
       >
         <NavigationBar />
