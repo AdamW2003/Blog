@@ -9,6 +9,7 @@ import Logo from "../components/Logo";
 const Dashboard = () => {
   const theme = useTheme();
   const drawerWidth = 300;
+
   return (
     <React.Fragment>
       <Box
@@ -17,7 +18,7 @@ const Dashboard = () => {
         }}
       >
         <NavigationBar />
-        <Box sx={{display: "flex"}}>
+        <Box sx={{ display: "flex" }}>
           <SideBar drawerWidth={drawerWidth} />
           <Content />
         </Box>

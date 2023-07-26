@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AppBar, Toolbar, Typography, Button, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import ReviewCard from "../components/ReviewCard";
-import { ArticleContext } from "../data/ArticleContext";
+import { ArticleContext } from "../contexts/ArticleContext";
 
 const ArticalMapping = ({ sortDate, sortRating }) => {
   const { articles } = useContext(ArticleContext);
@@ -38,8 +38,6 @@ const ArticalMapping = ({ sortDate, sortRating }) => {
 
   return (
     <div>
-      {/* <button onClick={toggleSortDate}>Toggle Date Sorting</button>
-        <button onClick={toggleSortRating}>Toggle Rating Sorting</button> */}
       {sortedArticles.map((content, index) => (
         <ReviewCard key={index} item={content} />
       ))}

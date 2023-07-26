@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import articleData from './articleData';
+import articleData from '../data/articleData';
 
 const ArticleContext = createContext();
 

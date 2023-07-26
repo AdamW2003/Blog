@@ -17,7 +17,7 @@ import { useTheme } from "@mui/material/styles";
 import styled from "styled-components";
 import styledScrollBar from "../modules/styling/styledScrollBar";
 import ReviewCard from "../components/ReviewCard";
-import { ArticleContext } from "../data/ArticleContext";
+import { ArticleContext } from "../contexts/ArticleContext";
 import { useContext } from "react";
 import GradeIcon from "@mui/icons-material/Grade";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
