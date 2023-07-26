@@ -4,6 +4,7 @@ import * as React from "react";
 import NavigationBar from "./NavigationBar";
 import SideBar from "./SideBar";
 import Content from "./Content";
+import Logo from "../components/Logo";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -16,10 +17,9 @@ const Dashboard = () => {
         }}
       >
         <NavigationBar />
-        <Box sx={{ display: "flex" }}>
+        <Box sx={{display: "flex"}}>
           <SideBar drawerWidth={drawerWidth} />
           <Content />
-
         </Box>
       </Box>
     </React.Fragment>

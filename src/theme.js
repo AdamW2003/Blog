@@ -5,8 +5,8 @@ const customVars = {
     beige1:'#EAE7DC',
     beige2:'#D8C3A5',
     grey:'#8E8D8A',
-    darkRed:'#E85A4F',
-    lightRed:'#E98074',
+    red1:'#E85A4F',
+    red2:'#E98074',
   }
 }
 
@@ -17,7 +17,7 @@ const theme = createTheme({
       main: customVars.colours.beige1,
     },
     secondary: {
-      main: customVars.colours.lightRed,
+      main: customVars.colours.red1,
     },
   },
   typography: {
@@ -48,13 +48,13 @@ const theme = createTheme({
         borderRadius: 8,
       },
       containedPrimary: {
-        color: customVars.colours.lightRed,
+        color: customVars.colours.red1,
         backgroundColor: customVars.colours.grey,
         outline: '1px solid' + customVars.colours.grey,
       },
       containedSecondary: {
         color: customVars.colours.darkRed,
-        backgroundColor: customVars.colours.lightRed,
+        backgroundColor: customVars.colours.red1,
       },
     },
   },

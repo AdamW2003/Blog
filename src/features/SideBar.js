@@ -1,13 +1,48 @@
 import * as React from "react";
-import { Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material";
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import {
+  Divider,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Paper,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
 import { useTheme } from "@mui/material/styles";
 import styled from "styled-components";
 import styledScrollBar from "../modules/styling/styledScrollBar";
+import ReviewCard from "../components/ReviewCard";
+import { ArticleContext } from "../data/ArticleContext";
+import { useContext } from "react";
+import GradeIcon from "@mui/icons-material/Grade";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import ArticalMapping from "./ArticalMapping";
+import { useState } from "react";
+import ShuffleIcon from '@mui/icons-material/Shuffle';
 
-const SideBar = ({drawerWidth}) => {
+const SideBar = ({ drawerWidth }) => {
   var theme = useTheme();
+
+  const [sortDate, setSortDate] = useState("newest"); // Default: newest
+  const [sortRating, setSortRating] = useState("highest"); // Default: highest
+
+  const toggleSortDate = () => {
+    setSortDate(sortDate === "newest" ? "oldest" : "newest");
+    setSortRating(null);
+  };
+
+  const toggleSortRating = () => {
+    setSortRating(sortRating === "highest" ? "lowest" : "highest");
+    setSortDate(null);
+  };
+
   return (
     <Drawer
       sx={{
@@ -18,51 +53,52 @@ const SideBar = ({drawerWidth}) => {
           boxSizing: "border-box",
           backgroundColor: theme.colours.beige2,
           ...styledScrollBar(theme),
-      }}}
+        },
+      }}
       variant="permanent"
       anchor="left"
     >
       <Toolbar>
         <Typography variant="h6" component="div">
-          My App
+          Media Musings
         </Typography>
       </Toolbar>
       <Divider />
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => toggleSortRating()}>
+            <ListItemIcon>
+              <GradeIcon />
+            </ListItemIcon>
+            <ListItemIcon>
+              {sortRating === "highest" || sortRating === null ? (
+                <KeyboardDoubleArrowUpIcon />
+              ) : (
+                <KeyboardDoubleArrowDownIcon />
+              )}
+            </ListItemIcon>
+            <ListItemText primary={"Sort by rating"} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => toggleSortDate()}>
+            <ListItemIcon>
+              <AccessTimeIcon />
+            </ListItemIcon>
+            <ListItemIcon>
+              {sortDate === "newest" || sortDate === null ? (
+                <KeyboardDoubleArrowUpIcon />
+              ) : (
+                <KeyboardDoubleArrowDownIcon />
+              )}
+            </ListItemIcon>
+            <ListItemText primary={"Sort by date"} />
+          </ListItemButton>
+        </ListItem>
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-        {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-
+        <ArticalMapping sortDate={sortDate} sortRating={sortRating} />
       </List>
     </Drawer>
   );
