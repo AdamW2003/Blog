@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[831],{5831:function(a,e,s){a.exports=s.p+"static/media/indianajones.c1885d6a65ec2a50f4a9.jpg"}}]);

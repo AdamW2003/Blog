@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[990],{8990:function(s,a,e){s.exports=e.p+"static/media/starwars.fb918f566bfaf3360638.jpg"}}]);

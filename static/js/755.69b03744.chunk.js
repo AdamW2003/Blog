@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[755],{755:function(e,p,s){e.exports=s.p+"static/media/oppenheimer.dd4008d652e58ab08779.jpg"}}]);

@@ -1,7 +1,12 @@
 {
   "files": {
     "main.css": "/Blog/static/css/main.2b8efa82.css",
-    "main.js": "/Blog/static/js/main.a636abc5.js",
+    "main.js": "/Blog/static/js/main.98b30d24.js",
+    "static/js/831.512e7cea.chunk.js": "/Blog/static/js/831.512e7cea.chunk.js",
+    "static/js/201.7f377c46.chunk.js": "/Blog/static/js/201.7f377c46.chunk.js",
+    "static/js/755.69b03744.chunk.js": "/Blog/static/js/755.69b03744.chunk.js",
+    "static/js/494.b62edef9.chunk.js": "/Blog/static/js/494.b62edef9.chunk.js",
+    "static/js/990.71d90627.chunk.js": "/Blog/static/js/990.71d90627.chunk.js",
     "static/media/indianajones.jpg": "/Blog/static/media/indianajones.c1885d6a65ec2a50f4a9.jpg",
     "static/media/starwars.jpg": "/Blog/static/media/starwars.fb918f566bfaf3360638.jpg",
     "static/media/oppenheimer.jpg": "/Blog/static/media/oppenheimer.dd4008d652e58ab08779.jpg",
@@ -65,10 +70,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/Blog/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/Blog/index.html",
     "main.2b8efa82.css.map": "/Blog/static/css/main.2b8efa82.css.map",
-    "main.a636abc5.js.map": "/Blog/static/js/main.a636abc5.js.map"
+    "main.98b30d24.js.map": "/Blog/static/js/main.98b30d24.js.map"
   },
   "entrypoints": [
     "static/css/main.2b8efa82.css",
-    "static/js/main.a636abc5.js"
+    "static/js/main.98b30d24.js"
   ]
 }

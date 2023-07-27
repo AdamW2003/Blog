@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[201],{7201:function(a,e,c){a.exports=c.p+"static/media/lotr.ac172daa09fe33a0908c.jpg"}}]);
