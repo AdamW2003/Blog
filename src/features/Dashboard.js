@@ -8,12 +8,6 @@ import Logo from "../components/Logo";
 const Dashboard = () => {
   const theme = useTheme();
 
-  // const [open, setOpen] = React.useState(false);
-
-  // const handleDrawerOpen = () => {
-  //   setOpen(true);
-  // };
-
   return (
     <React.Fragment>
       <Box
@@ -23,7 +17,6 @@ const Dashboard = () => {
         }}
       >
         <Box sx={{ display: "flex" }}>
-          {/* <NavigationBar handleDrawerOpen={handleDrawerOpen} open={open}/> */}
           <SideBar/>
           <Content />
         </Box>

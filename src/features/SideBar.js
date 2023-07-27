@@ -47,10 +47,7 @@ const closedMixin = (theme) => ({
     duration: theme.transitions.duration.leavingScreen,
   }),
   overflowX: "hidden",
-  width: `calc(${theme.spacing(7)} + 1px)`,
-  [theme.breakpoints.up("sm")]: {
-    width: `calc(${theme.spacing(12)} + 1px)`,
-  },
+  width: `calc(${theme.spacing(12)} + 1px)`,
 });
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -163,7 +160,7 @@ const SideBar = () => {
         <List>
           <ListItem disablePadding>
             <ListItemButton onClick={() => toggleSortRating()}>
-              <ListItemIcon>
+              <ListItemIcon sx={{paddingLeft: "0.75em"}}>
                 <GradeIcon />
               </ListItemIcon>
               <ListItemIcon>
@@ -178,7 +175,7 @@ const SideBar = () => {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton onClick={() => toggleSortDate()}>
-              <ListItemIcon>
+              <ListItemIcon sx={{paddingLeft: "0.75em"}}>
                 <AccessTimeIcon />
               </ListItemIcon>
               <ListItemIcon>

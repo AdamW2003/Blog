@@ -6,7 +6,14 @@ import React from "react";
 const Logo = () => {
   const theme = useTheme();
   return (
-    <Box sx={{ textAlign: "center" }}>
+    <Box
+      sx={{
+        textAlign: "center",
+        [theme.breakpoints.down("sm")]: {
+          marginTop: "2em"
+        },
+      }}
+    >
       <svg width={0} height={0}>
         <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
           <stop offset={0} stopColor={theme.colours.red2} />
@@ -15,8 +22,11 @@ const Logo = () => {
       </svg>
       <BlurOnIcon
         sx={{
-          fontSize: "45em",
+          fontSize: "5000%",
           fill: "url(#linearColors)",
+          [theme.breakpoints.down("sm")]: {
+            fontSize: "1800%",
+          },
         }}
       />
       <Typography
@@ -30,8 +40,12 @@ const Logo = () => {
           justifyContent: "center",
           fontSize: "1.5rem",
           paddingTop: "3em",
-          fontSize: "6em", 
+          fontSize: "670%",
           opacity: 0.7,
+          [theme.breakpoints.down("sm")]: {
+            marginTop: "0.8em",
+            fontSize: "250%",
+          },
         }}
       >
         Media Musings
@@ -39,6 +53,5 @@ const Logo = () => {
     </Box>
   );
 };
-
 
 export default Logo;

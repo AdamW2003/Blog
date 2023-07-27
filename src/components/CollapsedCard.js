@@ -3,7 +3,6 @@ import { Box, Paper, Rating } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import React, { useEffect, useState } from "react";
 import DynamicImage from "../modules/DynamicImage";
-// import oppenheimer from "../data/images/oppenheimer.jpg"
 
 const CollapsedCard = ({ item }) => {
   const theme = useTheme();
@@ -21,8 +20,8 @@ const CollapsedCard = ({ item }) => {
         height: "8em",
         backgroundColor: theme.colours.beige1,
         display: "flex",
-        flexDirection: "column", // Change to column to stack items vertically
-        alignItems: "center", // Align items to the center of the column
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <div
