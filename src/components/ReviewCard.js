@@ -10,7 +10,7 @@ const ReviewCard = ({ item }) => {
 
   const imageStyle = {
     width: "4.8em",
-    borderRadius: "0.75em",
+    borderRadius: "5px",
   };
 
   return (
@@ -20,8 +20,8 @@ const ReviewCard = ({ item }) => {
         width: "90%",
         margin: "1em",
         backgroundColor: theme.colours.beige1,
-        display: "flex", // Use flex to arrange elements horizontally
-        flexDirection: "column", // Stack elements vertically inside the Paper
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <Rating
@@ -34,14 +34,20 @@ const ReviewCard = ({ item }) => {
       />
       <Box
         sx={{
-          display: 'flex',
-          flexDirection: 'row', // Arrange elements horizontally
-          padding: '0.5em',
+          display: "flex",
+          flexDirection: "row",
+          padding: "0.5em",
         }}
       >
         <DynamicImage imageName={item.poster} style={imageStyle} />
-        <Box sx={{ paddingLeft: '1em', display: 'flex', flexDirection: 'column' }}>
-          <Typography sx={{ fontWeight: 'bold' }}>{item.title}</Typography>
+        <Box
+          sx={{
+            paddingLeft: "1em",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Typography sx={{ fontWeight: "bold" }}>{item.title}</Typography>
           <Typography>{DateFormatter(item.date)}</Typography>
         </Box>
       </Box>

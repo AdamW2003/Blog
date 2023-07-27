@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Oppenheimer",
-    "content": "This is the content of the first article...",
+    "content": "This is the content of the first article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2024-07-26",
     "releaseDate": "2023-07-25",
     "poster": "oppenheimer.jpg",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Sample Article 2",
-    "content": "This is the content of the second article...",
+    "content": "This is the content of the second article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-27",
     "releaseDate": "2023-07-26",
     "poster": "lotr.jpg",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Sample Article 3",
-    "content": "This is the content of the third article...",
+    "content": "This is the content of the third article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-28",
     "releaseDate": "2023-07-27",
     "poster": "shawshank.jpg",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Sample Article 4",
-    "content": "This is the content of the fourth article...",
+    "content": "This is the content of the fourth article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-29",
     "releaseDate": "2023-07-28",
     "poster": "starwars.jpg",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "Sample Article 5",
-    "content": "This is the content of the fifth article...",
+    "content": "This is the content of the fifth article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-30",
     "releaseDate": "2023-07-29",
     "poster": "indianajones.jpg",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "Oppenheimer",
-    "content": "This is the content of the first article...",
+    "content": "This is the content of the first article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2024-07-26",
     "releaseDate": "2023-07-25",
     "poster": "oppenheimer.jpg",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "title": "Sample Article 2",
-    "content": "This is the content of the second article...",
+    "content": "This is the content of the second article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-27",
     "releaseDate": "2023-07-26",
     "poster": "lotr.jpg",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "title": "Sample Article 3",
-    "content": "This is the content of the third article...",
+    "content": "This is the content of the third article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-28",
     "releaseDate": "2023-07-27",
     "poster": "shawshank.jpg",
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "title": "Sample Article 4",
-    "content": "This is the content of the fourth article...",
+    "content": "This is the content of the fourth article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-29",
     "releaseDate": "2023-07-28",
     "poster": "starwars.jpg",
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "title": "Sample Article 5",
-    "content": "This is the content of the fifth article...",
+    "content": "This is the content of the fifth article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-30",
     "releaseDate": "2023-07-29",
     "poster": "indianajones.jpg",

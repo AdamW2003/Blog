@@ -1,15 +1,26 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
-import { AppBar, Toolbar, Typography, Button, IconButton, Paper } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import ReviewCard from "../components/ReviewCard";
-import { ArticleContext } from "../contexts/ArticleContext";
+import { Box, Button, Paper, SwipeableDrawer, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import React from "react";
+import { useState } from "react";
+import Slide from "@mui/material/Slide";
+import DynamicImage from "../modules/DynamicImage";
+import DateFormatter from "../modules/DateFormatter";
+import LeftArtical from "../components/LeftArtical";
+import RightArtical from "../components/RightArtical";
 
-const ArticalCard = ({content, position }) => {
+const ArticalCard = ({ item, position, handleToggle }) => {
   const theme = useTheme();
+
+  const imageStyle = {
+    height: "94%",
+    borderRadius: "5px",
+    display: "block",
+    margin: position ? "auto 1em auto auto" : "auto auto auto 1em",
+  };
+
   return (
     <Paper
-      key={content}
+      onClick={handleToggle}
       sx={{
         backgroundColor: theme.colours.beige2,
         height: "40vh",
@@ -20,7 +31,7 @@ const ArticalCard = ({content, position }) => {
         marginRight: position ? "1em" : "auto",
       }}
     >
-      {content.title}
+      {!position ? <LeftArtical item={item}/> : <RightArtical item={item}/>}
     </Paper>
   );
 };

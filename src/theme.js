@@ -2,6 +2,7 @@ import { createTheme } from '@mui/material/styles';
 
 const customVars = {
   drawerWidth: 300,
+  drawerBleeding: 56,
   colours: {
     beige1:'#EAE7DC',
     beige2:'#D8C3A5',
@@ -46,7 +47,7 @@ const theme = createTheme({
       }
     },
     img: {
-      borderRadius: "25px",
+      borderRadius: "15px",
     },
     MuiButton: {
       root: {

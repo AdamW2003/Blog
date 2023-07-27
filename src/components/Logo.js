@@ -25,7 +25,7 @@ const Logo = () => {
           fontSize: "5000%",
           fill: "url(#linearColors)",
           [theme.breakpoints.down("sm")]: {
-            fontSize: "1800%",
+            fontSize: "1600%",
           },
         }}
       />
@@ -44,7 +44,7 @@ const Logo = () => {
           opacity: 0.7,
           [theme.breakpoints.down("sm")]: {
             marginTop: "0.8em",
-            fontSize: "250%",
+            fontSize: "230%",
           },
         }}
       >

@@ -124,7 +124,7 @@ const SideBar = () => {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBar position="fixed" open={open} >
-        <Toolbar>
+        <Toolbar >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -132,6 +132,7 @@ const SideBar = () => {
             edge="start"
             sx={{
               marginRight: 5,
+              marginLeft: "0",
               ...(open && { display: "none" }),
             }}
           >
