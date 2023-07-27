@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ReviewCard from "../components/ReviewCard";
 import { ArticleContext } from "../contexts/ArticleContext";
 
-const ArticalMapping = ({ sortDate, sortRating }) => {
+const ArticalMapping = ({ sortDate, sortRating, Cards }) => {
   const { articles } = useContext(ArticleContext);
   const [originalArticles, setOriginalArticles] = useState(articles);
 
@@ -39,7 +39,7 @@ const ArticalMapping = ({ sortDate, sortRating }) => {
   return (
     <div>
       {sortedArticles.map((content, index) => (
-        <ReviewCard key={index} item={content} />
+        <Cards key={index} item={content} />
       ))}
     </div>
   );

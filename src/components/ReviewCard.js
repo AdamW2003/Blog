@@ -21,6 +21,7 @@ const ReviewCard = ({item}) => {
         readOnly
         precision={0.5}
         emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+        max={10}
       />
     </Paper>
   );

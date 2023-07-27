@@ -1,5 +1,6 @@
 const styledScrollBar = (theme) => {
     return {
+      overflow: "scroll",
       "::-webkit-scrollbar": {
         width: "20px",
       },

@@ -1,14 +1,18 @@
 import { AppBar, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import * as React from "react";
-import NavigationBar from "./NavigationBar";
 import SideBar from "./SideBar";
 import Content from "./Content";
 import Logo from "../components/Logo";
 
 const Dashboard = () => {
   const theme = useTheme();
-  const drawerWidth = 300;
+
+  // const [open, setOpen] = React.useState(false);
+
+  // const handleDrawerOpen = () => {
+  //   setOpen(true);
+  // };
 
   return (
     <React.Fragment>
@@ -18,9 +22,9 @@ const Dashboard = () => {
           overflowX: "hidden",
         }}
       >
-        <NavigationBar />
         <Box sx={{ display: "flex" }}>
-          <SideBar drawerWidth={drawerWidth} />
+          {/* <NavigationBar handleDrawerOpen={handleDrawerOpen} open={open}/> */}
+          <SideBar/>
           <Content />
         </Box>
       </Box>

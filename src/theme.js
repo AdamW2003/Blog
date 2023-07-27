@@ -1,12 +1,14 @@
 import { createTheme } from '@mui/material/styles';
 
 const customVars = {
+  drawerWidth: 300,
   colours: {
     beige1:'#EAE7DC',
     beige2:'#D8C3A5',
     grey:'#8E8D8A',
     red1:'#E85A4F',
     red2:'#E98074',
+    gold: '#faaf00'
   }
 }
 

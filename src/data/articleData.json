@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Sample Article 1",
+    "title": "Oppenheimer",
     "content": "This is the content of the first article...",
     "date": "2024-07-26",
     "releaseDate": "2023-07-25",
-    "poster": "/images/sample-article-1.jpg",
-    "rating": 1
+    "poster": "oppenheimer.jpg",
+    "rating": 9
   },
   {
     "id": 2,
@@ -14,7 +14,7 @@
     "content": "This is the content of the second article...",
     "date": "2023-07-27",
     "releaseDate": "2023-07-26",
-    "poster": "/images/sample-article-2.jpg",
+    "poster": "lotr.jpg",
     "rating": 3.8
   },
   {
@@ -23,7 +23,7 @@
     "content": "This is the content of the third article...",
     "date": "2023-07-28",
     "releaseDate": "2023-07-27",
-    "poster": "/images/sample-article-3.jpg",
+    "poster": "shawshank.jpg",
     "rating": 4.2
   },
   {
@@ -32,7 +32,7 @@
     "content": "This is the content of the fourth article...",
     "date": "2023-07-29",
     "releaseDate": "2023-07-28",
-    "poster": "/images/sample-article-4.jpg",
+    "poster": "starwars.jpg",
     "rating": 4.9
   },
   {
@@ -41,52 +41,7 @@
     "content": "This is the content of the fifth article...",
     "date": "2023-07-30",
     "releaseDate": "2023-07-29",
-    "poster": "/images/sample-article-5.jpg",
-    "rating": 3.0
-  },
-  {
-    "id": 6,
-    "title": "Sample Article 1",
-    "content": "This is the content of the first article...",
-    "date": "2024-07-26",
-    "releaseDate": "2023-07-25",
-    "poster": "/images/sample-article-1.jpg",
-    "rating": 1
-  },
-  {
-    "id": 7,
-    "title": "Sample Article 2",
-    "content": "This is the content of the second article...",
-    "date": "2023-07-27",
-    "releaseDate": "2023-07-26",
-    "poster": "/images/sample-article-2.jpg",
-    "rating": 3.8
-  },
-  {
-    "id": 8,
-    "title": "Sample Article 3",
-    "content": "This is the content of the third article...",
-    "date": "2023-07-28",
-    "releaseDate": "2023-07-27",
-    "poster": "/images/sample-article-3.jpg",
-    "rating": 4.2
-  },
-  {
-    "id": 9,
-    "title": "Sample Article 4",
-    "content": "This is the content of the fourth article...",
-    "date": "2023-07-29",
-    "releaseDate": "2023-07-28",
-    "poster": "/images/sample-article-4.jpg",
-    "rating": 4.9
-  },
-  {
-    "id": 10,
-    "title": "Sample Article 5",
-    "content": "This is the content of the fifth article...",
-    "date": "2023-07-30",
-    "releaseDate": "2023-07-29",
-    "poster": "/images/sample-article-5.jpg",
+    "poster": "indianajones.jpg",
     "rating": 3.0
   }
 ]
