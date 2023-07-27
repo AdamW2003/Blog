@@ -8,28 +8,21 @@ import DynamicImage from "../modules/DynamicImage";
 const CollapsedCard = ({ item }) => {
   const theme = useTheme();
 
-  const [image, setImage] = useState(null);
-
-  useEffect(() => {
-    const loadImage = async () => {
-      try {
-        const imageModule = import("../images/oppenheimer.jpg");
-        setImage(imageModule.default);
-      } catch (error) {
-        console.error("Error loading image:", error);
-      }
-    };
-
-    loadImage();
-  }, []);
+  const imageStyle = {
+    width: '2.75em',
+    borderRadius: '5px',
+  };
 
   return (
     <Paper
       sx={{
         margin: "0.5em",
         width: "4em",
+        height: "8em",
         backgroundColor: theme.colours.beige1,
         display: "flex",
+        flexDirection: "column", // Change to column to stack items vertically
+        alignItems: "center", // Align items to the center of the column
       }}
     >
       <div
@@ -41,15 +34,8 @@ const CollapsedCard = ({ item }) => {
       >
         <StarIcon style={{ color: theme.colours.gold }} />
         <span>{Math.round(item.rating)}/10</span>
-        {/* {image && <Box
-          sx={{ height: "90%", width: "90%", margin: "0.5em" }}
-          component="img"
-          alt="Poster Image"
-          src={image}
-        />} */}
-        {/* <DynamicImage imageName={item.poster} /> */}
-        <DynamicImage imageName={"indianajones.jpg"} />
       </div>
+      <DynamicImage imageName={item.poster} style={imageStyle}/>
     </Paper>
   );
 };

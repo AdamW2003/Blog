@@ -45,6 +45,9 @@ const theme = createTheme({
         }
       }
     },
+    img: {
+      borderRadius: "25px",
+    },
     MuiButton: {
       root: {
         borderRadius: 8,

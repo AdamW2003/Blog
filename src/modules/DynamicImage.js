@@ -1,12 +1,19 @@
-import React from 'react';
-import image from '../images/indianajones.jpg'
+import React, { useState, useEffect } from 'react';
 
-const DynamicImage = ({ imageName }) => {
-    const imagePath = require(`../images/${imageName}`);
-    console.log(imagePath)
-    return (
-      <img src={imagePath.default} alt="Dynamic Image" />
-    );
-  };
-  
+const DynamicImage = ({ imageName, style }) => {
+  const [imagePath, setImagePath] = useState(null);
+
+  useEffect(() => {
+    import(`../images/${imageName}`)
+      .then((image) => setImagePath(image.default))
+      .catch((error) => console.error(error));
+  }, [imageName]);
+
+  if (!imagePath) {
+    return <div>Loading...</div>; // You can render a loading state while the image is being fetched
+  }
+
+  return <img src={imagePath} alt="Dynamic Image" style={style}/>;
+};
+
 export default DynamicImage;
