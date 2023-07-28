@@ -47,7 +47,7 @@ const ReviewCard = ({ item }) => {
             flexDirection: "column",
           }}
         >
-          <Typography sx={{ fontWeight: "bold" }}>{item.title}</Typography>
+          <Typography sx={{ fontWeight: "bold", overflowWrap: "break-word" }}>{item.title}</Typography>
           <Typography>{DateFormatter(item.date)}</Typography>
         </Box>
       </Box>

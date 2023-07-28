@@ -10,15 +10,25 @@ const Content = () => {
   const theme = useTheme();
   const { articles } = useContext(ArticleContext);
 
+  const backgroundStyle = {
+    width: "100%",
+    backgroundColor: theme.colours.beige1,
+    backgroundImage: `
+      linear-gradient(90deg, rgba(255, 255, 255, .07) 50%, transparent 50%),
+      linear-gradient(90deg, rgba(255, 255, 255, .13) 50%, transparent 50%),
+      linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .17) 50%),
+      linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .19) 50%)
+    `,
+    backgroundSize: "13px, 29px, 37px, 53px",
+  };
+
   return (
     <React.Fragment>
-      <List sx={{ width: "100%" }}>
+      <List sx={backgroundStyle}>
         <Logo />
         {articles.map((item, index) => {
           var position = Boolean(index % 2);
-          return (
-            <ArticalContainer item={item} position={position} />
-          );
+          return <ArticalContainer item={item} position={position} />;
         })}
       </List>
     </React.Fragment>

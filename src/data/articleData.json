@@ -6,43 +6,48 @@
     "date": "2024-07-26",
     "releaseDate": "2023-07-25",
     "poster": "oppenheimer.jpg",
-    "rating": 9
+    "rating": 9,
+    "director": "Christopher Nolan"
   },
   {
     "id": 2,
-    "title": "Sample Article 2",
+    "title": "Lord of the rings Fellow Ship of the Ring",
     "content": "This is the content of the second article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-27",
     "releaseDate": "2023-07-26",
     "poster": "lotr.jpg",
-    "rating": 3.8
+    "rating": 3.8,
+    "director": "Peter Jackson"
   },
   {
     "id": 3,
-    "title": "Sample Article 3",
+    "title": "ShawShank Redemption",
     "content": "This is the content of the third article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-28",
     "releaseDate": "2023-07-27",
     "poster": "shawshank.jpg",
-    "rating": 4.2
+    "rating": 4.2,
+    "director": "Frank Darabont"
   },
   {
     "id": 4,
-    "title": "Sample Article 4",
+    "title": "Star Wars",
     "content": "This is the content of the fourth article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-29",
     "releaseDate": "2023-07-28",
     "poster": "starwars.jpg",
-    "rating": 4.9
+    "rating": 4.9,
+    "director": "George Lucas"
   },
   {
     "id": 5,
-    "title": "Sample Article 5",
+    "title": "Indiana Jones",
     "content": "This is the content of the fifth article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
     "date": "2023-07-30",
     "releaseDate": "2023-07-29",
     "poster": "indianajones.jpg",
-    "rating": 3.0
+    "rating": 3.0,
+    "director": "Steven Spielberg"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "date": "2024-07-26",
     "releaseDate": "2023-07-25",
     "poster": "oppenheimer.jpg",
-    "rating": 9
+    "rating": 9,
+    "director": "Christopher Nolan"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "date": "2023-07-27",
     "releaseDate": "2023-07-26",
     "poster": "lotr.jpg",
-    "rating": 3.8
+    "rating": 3.8,
+    "director": "Peter Jackson"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "date": "2023-07-28",
     "releaseDate": "2023-07-27",
     "poster": "shawshank.jpg",
-    "rating": 4.2
+    "rating": 4.2,
+    "director": "Frank Darabont"
   },
   {
     "id": 9,
@@ -78,15 +86,7 @@
     "date": "2023-07-29",
     "releaseDate": "2023-07-28",
     "poster": "starwars.jpg",
-    "rating": 4.9
-  },
-  {
-    "id": 10,
-    "title": "Sample Article 5",
-    "content": "This is the content of the fifth article... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu arcu sit amet nisi consectetur luctus. Nulla facilisi. Ut posuere fringilla enim, non varius sapien hendrerit eu. Quisque tristique dolor nec tortor venenatis, non consequat nisi consectetur.",
-    "date": "2023-07-30",
-    "releaseDate": "2023-07-29",
-    "poster": "indianajones.jpg",
-    "rating": 3.0
+    "rating": 4.9,
+    "director": "George Lucas"
   }
 ]

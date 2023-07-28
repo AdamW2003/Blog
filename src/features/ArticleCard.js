@@ -5,8 +5,8 @@ import { useState } from "react";
 import Slide from "@mui/material/Slide";
 import DynamicImage from "../modules/DynamicImage";
 import DateFormatter from "../modules/DateFormatter";
-import LeftArtical from "../components/LeftArtical";
-import RightArtical from "../components/RightArtical";
+import LeftArtical from "../components/LeftArticle";
+import RightArtical from "../components/RightArticle";
 
 const ArticalCard = ({ item, position, handleToggle }) => {
   const theme = useTheme();
