@@ -26,7 +26,7 @@ const Content = () => {
     <React.Fragment>
       <List sx={backgroundStyle}>
         <Logo />
-        {articles.map((item, index) => {
+        {articles.slice(0, 50).map((item, index) => {
           var position = Boolean(index % 2);
           return <ArticalContainer item={item} position={position} />;
         })}

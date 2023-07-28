@@ -1,5 +1,5 @@
 import BlurOnIcon from "@mui/icons-material/BlurOn";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import React from "react";
 import DateFormatter from "../modules/DateFormatter";
@@ -8,11 +8,11 @@ import ArticleContent from "./ArticleContent";
 
 const LeftArticle = ({ item }) => {
   const theme = useTheme();
+  const isScreenBelow600px = useMediaQuery(theme.breakpoints.down("sm")); // Adjust the breakpoint as needed
 
   const containerStyle = {
     display: "flex",
-    alignItems: "flex-start", // Align items to the top of the container
-    gap: "10px", // Adjust the spacing between elements as needed
+    marginLeft: "1em"
   };
 
   const imageStyle = {
@@ -28,12 +28,22 @@ const LeftArticle = ({ item }) => {
     padding: "1em 0",
   };
 
+  if (isScreenBelow600px) {
+    return (
+      <Box style={containerStyle}>
+        <Box style={titleDateContainerStyle}>
+          <ArticleContent item={item} />
+        </Box>
+      </Box>
+    );
+  }
+
   return (
     <Box style={containerStyle}>
-      <DynamicImage imageName={item.poster} style={imageStyle} />
       <Box style={titleDateContainerStyle}>
         <ArticleContent item={item} />
       </Box>
+      <DynamicImage imageName={item.poster} style={imageStyle} />
     </Box>
   );
 };

@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 const customVars = {
   drawerWidth: 300,
   drawerBleeding: 56,
+  borderRadius: "15px",
   colours: {
     beige1:'#EAE7DC',
     beige2:'#D8C3A5',

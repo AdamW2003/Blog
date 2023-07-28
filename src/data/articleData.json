@@ -88,5 +88,15 @@
     "poster": "starwars.jpg",
     "rating": 4.9,
     "director": "George Lucas"
+  },
+  {
+    "id": 9,
+    "title": "They cloned Tyrone",
+    "content": "they literaly cloned tyrone and dident tell you who tyrone was till the end (me and ed knew all along)",
+    "date": "2023-07-29",
+    "releaseDate": "2023-07-28",
+    "poster": "finn.jpg",
+    "rating": 3.5,
+    "director": "Juel Taylor"
   }
 ]

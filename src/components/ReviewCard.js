@@ -22,6 +22,10 @@ const ReviewCard = ({ item }) => {
         backgroundColor: theme.colours.beige1,
         display: "flex",
         flexDirection: "column",
+        "&:hover": {
+          boxShadow: 10,
+          transition: "box-shadow 0.1s ease-in-out",
+        },
       }}
     >
       <Rating
@@ -30,7 +34,6 @@ const ReviewCard = ({ item }) => {
         readOnly
         precision={0.5}
         emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
-        max={10}
       />
       <Box
         sx={{
@@ -47,7 +50,9 @@ const ReviewCard = ({ item }) => {
             flexDirection: "column",
           }}
         >
-          <Typography sx={{ fontWeight: "bold", overflowWrap: "break-word" }}>{item.title}</Typography>
+          <Typography sx={{ fontWeight: "bold", overflowWrap: "break-word" }}>
+            {item.title}
+          </Typography>
           <Typography>{DateFormatter(item.date)}</Typography>
         </Box>
       </Box>

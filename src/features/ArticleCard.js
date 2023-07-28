@@ -1,4 +1,4 @@
-import { Box, Button, Paper, SwipeableDrawer, Typography } from "@mui/material";
+import { Box, Button, Paper, SwipeableDrawer, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import React from "react";
 import { useState } from "react";
@@ -10,6 +10,7 @@ import RightArtical from "../components/RightArticle";
 
 const ArticalCard = ({ item, position, handleToggle }) => {
   const theme = useTheme();
+  const isScreenBelow600px = useMediaQuery(theme.breakpoints.up("sm"));
 
   const imageStyle = {
     height: "94%",
@@ -23,12 +24,9 @@ const ArticalCard = ({ item, position, handleToggle }) => {
       onClick={handleToggle}
       sx={{
         backgroundColor: theme.colours.beige2,
-        height: "40vh",
-        width: "80%",
-        margin: "2em",
+        maxHeight: isScreenBelow600px ? "40vh" : "70vh",
         display: "flex",
-        marginLeft: position ? "auto" : "1em",
-        marginRight: position ? "1em" : "auto",
+        width: "100%",
       }}
     >
       {!position ? <LeftArtical item={item}/> : <RightArtical item={item}/>}

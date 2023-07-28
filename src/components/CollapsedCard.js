@@ -22,6 +22,10 @@ const CollapsedCard = ({ item }) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          "&:hover": {
+            boxShadow: 5,
+            transition: "box-shadow 0.1s ease-in-out",
+          },
         }}
       >
         <div
@@ -32,7 +36,7 @@ const CollapsedCard = ({ item }) => {
           }}
         >
           <StarIcon style={{ color: theme.colours.gold }} />
-          <span>{Math.round(item.rating)}/10</span>
+          <span>{Math.round(item.rating)}/5</span>
         </div>
         <DynamicImage imageName={item.poster} style={imageStyle} />
       </Paper>
