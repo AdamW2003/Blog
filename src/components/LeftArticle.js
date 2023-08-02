@@ -12,20 +12,21 @@ const LeftArticle = ({ item }) => {
 
   const containerStyle = {
     display: "flex",
-    marginLeft: "1em"
+    alignItems: "flex-start",
   };
 
   const imageStyle = {
     height: "94%",
     borderRadius: "5px",
     display: "block",
-    margin: "auto 1em auto 1em",
+    margin: "1em",
+    height: "30vh",
   };
 
   const titleDateContainerStyle = {
     display: "flex",
     flexDirection: "column",
-    padding: "1em 0",
+    padding: "1em 2em 1em 1em",
   };
 
   if (isScreenBelow600px) {
@@ -40,10 +41,10 @@ const LeftArticle = ({ item }) => {
 
   return (
     <Box style={containerStyle}>
+      <DynamicImage imageName={item.poster} style={imageStyle} />
       <Box style={titleDateContainerStyle}>
         <ArticleContent item={item} />
       </Box>
-      <DynamicImage imageName={item.poster} style={imageStyle} />
     </Box>
   );
 };

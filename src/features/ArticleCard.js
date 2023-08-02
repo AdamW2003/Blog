@@ -12,13 +12,6 @@ const ArticalCard = ({ item, position, handleToggle }) => {
   const theme = useTheme();
   const isScreenBelow600px = useMediaQuery(theme.breakpoints.up("sm"));
 
-  const imageStyle = {
-    height: "94%",
-    borderRadius: "5px",
-    display: "block",
-    margin: position ? "auto 1em auto auto" : "auto auto auto 1em",
-  };
-
   return (
     <Paper
       onClick={handleToggle}
@@ -26,7 +19,6 @@ const ArticalCard = ({ item, position, handleToggle }) => {
         backgroundColor: theme.colours.beige2,
         maxHeight: isScreenBelow600px ? "40vh" : "70vh",
         display: "flex",
-        width: "100%",
       }}
     >
       {!position ? <LeftArtical item={item}/> : <RightArtical item={item}/>}

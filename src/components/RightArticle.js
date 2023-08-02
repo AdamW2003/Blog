@@ -12,7 +12,6 @@ const RightArticle = ({ item }) => {
   const containerStyle = {
     display: "flex",
     alignItems: "flex-start", // Align items to the top of the container
-    gap: "10px", // Adjust the spacing between elements as needed
     width: "100%",
   };
 
@@ -20,7 +19,10 @@ const RightArticle = ({ item }) => {
     height: "94%",
     borderRadius: "5px",
     display: "block",
-    margin: "auto 1em auto auto",
+    margin: "1em",
+    height: "30vh",
+    // right: 0
+    // minHeight: "85%",
   };
 
   const titleDateContainerStyle = {
